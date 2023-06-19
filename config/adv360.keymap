@@ -18,6 +18,10 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
 
+&mt {
+    tapping-term-ms = <400>;
+};
+
 / {
   behaviors {
     #include "macros.dtsi"
@@ -63,10 +67,6 @@
         tapping-term-ms = <200>;
         bindings = <&kp S>, <&kp LA(S)>;
     };
-  };
-
-  &mt {
-      tapping-term-ms = <400>;
   };
 
     keymap {
