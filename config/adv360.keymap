@@ -63,6 +63,10 @@
         tapping-term-ms = <200>;
         bindings = <&kp S>, <&kp LA(S)>;
     };
+
+    &mt {
+        tapping-term-ms = <400>;
+    };
   };
 
     keymap {
