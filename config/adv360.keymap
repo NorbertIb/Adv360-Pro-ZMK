@@ -42,7 +42,7 @@
 
     td1: tap_dance_1 {
         compatible = "zmk,behavior-tap-dance";
-        label = "TAP_DANCE_INTELLIJ_QUICK_DOCUMENTATION_DEFINITION";
+        label = "INTELLIJ_QUICK_DOC_DEF";
         #binding-cells = <0>;
         tapping-term-ms = <200>;
         bindings = <&kp RC(J)>, <&kp LS(LG(I))>;
