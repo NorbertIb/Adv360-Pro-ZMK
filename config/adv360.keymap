@@ -47,6 +47,16 @@
         tapping-term-ms = <200>;
         bindings = <&kp RC(J)>, <&kp LS(LG(I))>;
     };
+
+    ht_tp0: hold-tap_tap-preferred_0 {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOLD-TAP_TAP-PREFERRED_UMLAUT_A";
+        #binding-cells = <2>;
+        flavor = "tap-preferred";
+        tapping-term-ms = <200>;
+        quick-tap-ms = <-1>;
+        bindings = <&kp>, <&kp>;
+    };
   };
 
     keymap {
@@ -56,8 +66,8 @@
         default_layer {
             bindings = <
  &kp EQUAL     &kp N1    &kp N2    &kp N3     &kp N4  &kp N5                       &tog 1                                                                                        &mo 3  &kp N6  &kp N7     &kp N8    &kp N9    &kp N0  &kp MINUS
-   &kp TAB      &kp Q     &kp W     &kp E      &kp R   &kp T               &kp LS(LG(N5))                                                                                        &td1   &kp Y  &ht_tp LA(U) U      &kp I  &ht_tp LA(O) O     &kp P   &kp BSLH
-   &kp ESC  &ht_tp LA(A) A  &ht_tp LA(S) S     &kp D      &kp F   &kp G                        &td0  &kp LEFT_COMMAND  &kp LALT                  &kp RIGHT_CONTROL  &kp RIGHT_COMMAND      &none   &kp H   &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
+   &kp TAB      &kp Q     &kp W     &kp E      &kp R   &kp T               &kp LS(LG(N5))                                                                                        &td1   &kp Y  &hm LA(U) U      &kp I  &hm LA(O) O     &kp P   &kp BSLH
+   &kp ESC  &hm LA(A) A  &hm LA(S) S     &kp D      &kp F   &kp G                        &td0  &kp LEFT_COMMAND  &kp LALT                  &kp RIGHT_CONTROL  &kp RIGHT_COMMAND      &none   &kp H   &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
  &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B                                                 &kp HOME                          &kp PG_UP                                 &kp N   &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp RSHFT
      &mo 2  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                             &kp BSPC           &kp DEL   &kp END                          &kp PG_DN          &kp ENTER  &kp SPACE          &kp UP   &kp DOWN  &kp LBKT  &kp RBKT      &mo 2
             >;
