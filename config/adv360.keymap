@@ -48,15 +48,17 @@
         bindings = <&kp RC(J)>, <&kp LS(LG(I))>;
     };
 
-    ht_tp0: hold-tap_tap-preferred_0 {
-        compatible = "zmk,behavior-hold-tap";
-        label = "HOLD-TAP_TAP-PREFERRED_UMLAUT_A";
-        #binding-cells = <2>;
-        flavor = "tap-preferred";
-        tapping-term-ms = <200>;
-        quick-tap-ms = <-1>;
-        bindings = <&kp>, <&kp>;
-    };
+    /*
+     * ht_tp0: hold-tap_tap-preferred_0 {
+     *   compatible = "zmk,behavior-hold-tap";
+     *   label = "HOLD-TAP_TAP-PREFERRED_UMLAUT_A";
+     *   #binding-cells = <2>;
+     *   flavor = "tap-preferred";
+     *   tapping-term-ms = <200>;
+     *   quick-tap-ms = <(-1)>;
+     *   bindings = <&kp>, <&kp>;
+     * };
+     */
   };
 
     keymap {
